@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 MODELS_DIR = "models"
 
 def build_vectorizer(max_features=5000):
-    return TfidfVectorizer(max_features=max_features)
+    return TfidfVectorizer(max_features=5000, ngram_range=(1, 2))
 
 def train_and_save_vectorizer(texts, save_path=None):
     if save_path is None:
