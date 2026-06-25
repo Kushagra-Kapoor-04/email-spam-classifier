@@ -36,6 +36,7 @@ email-spam-classifier/
 │
 ├── data.py          # Dataset download, loading, cleaning, train-test split
 ├── model.py         # Training pipeline for both classifiers
+├── main.py
 ├── evaluate.py      # Metrics, plots, best-model selection
 ├── vectorizer.py    # TF-IDF vectorizer: fit, save, load
 ├── utils.py         # Text cleaning (lowercase, remove special chars)
