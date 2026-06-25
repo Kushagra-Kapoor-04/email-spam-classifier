@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+
+# Data and models
+data/
+models/*.pkl
+models/best_model_info.txt
+reports/*.png
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
