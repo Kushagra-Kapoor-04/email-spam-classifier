@@ -36,7 +36,13 @@ except Exception as e:
     vectorizer = None
     model_name = None
     print(f"Error loading model assets: {e}")
-
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({
+        "status": "running",
+        "model": model_name,
+        "usage": "POST /predict with JSON body: {\"text\": \"your message here\"}"
+    })
 @app.route("/predict", methods=["POST"])
 def predict():
     if model is None or vectorizer is None:
